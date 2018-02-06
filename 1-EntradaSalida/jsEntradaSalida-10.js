@@ -6,15 +6,15 @@ en el cuadro de texto "RESULTADO"*/
 function MostrarAumento()
 {
 
-
 	var importe;
 	var resultado;
 	
-	importe = parseInt(document.getElementById('importe').value);
+	importe = document.getElementById('importe').value;
 
-	resultado = importe - (importe * 0.25);
+	importe = parseInt(importe);
+
+	resultado = importe * 0.75;
 
 	document.getElementById('resultado').value = resultado;
-
 
 }

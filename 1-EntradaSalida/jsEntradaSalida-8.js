@@ -7,15 +7,22 @@ ej.: "El resto es 0 ."*/
 function SacarResto()
 
 {
+
 	var dividendo;
 	var divisor;
-	var resto;
+	var resultado;
 
-	dividendo = parseInt(document.getElementById('numeroDividendo').value);
-	divisor = parseInt(document.getElementById('numeroDivisor').value);
+	dividendo = document.getElementById('numeroDividendo').value;
+	divisor = document.getElementById('numeroDivisor').value;
 
-	resto = dividendo % divisor;
+	resultado = dividendo % divisor;
 
-	alert('El resto es: ' + resto);
+	alert('El resto es: ' + resultado);
 
+/*
+	var resultado;
+	resultado = 2%10;
+	alert(resultado);
+
+*/
 }

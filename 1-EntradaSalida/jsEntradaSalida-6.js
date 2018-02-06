@@ -10,14 +10,28 @@ function sumar()
 	var numeroDos;
 	var suma;
 
-	numeroUno = parseInt(document.getElementById('numeroUno').value);
-	numeroDos = parseInt(document.getElementById('numeroDos').value);
+	numeroUno = document.getElementById('numeroUno').value;
+	numeroDos = document.getElementById('numeroDos').value;
+	
+	numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
 
 	suma = numeroUno + numeroDos;
 
 	alert('la suma es: ' + suma);
-
-
-
+	
 }
+
+/*
+
+separar las operaciones
+parseInt convierte a numero entero, no redondea
+
+var numeroUno = "2";
+var numeroDos = 3;
+var resultado = numeroUno * numeroDos;
+alert(resultado);
+la suma concatena
+*/
+
 

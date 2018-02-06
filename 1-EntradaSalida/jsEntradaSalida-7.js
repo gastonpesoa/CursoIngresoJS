@@ -10,16 +10,17 @@ function sumar()
 	
 	var numeroUno;
 	var numeroDos;
-	var suma;
+	var resultado;
 
-	numeroUno = parseInt(document.getElementById('numeroUno').value);
-	numeroDos = parseInt(document.getElementById('numeroDos').value);
+	numeroUno = document.getElementById('numeroUno').value;
+	numeroDos = document.getElementById('numeroDos').value;
 
-	suma = numeroUno + numeroDos;
+	numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
+
+	resultado = numeroUno + numeroDos;
 	
-	alert('la Suma es: ' + suma);
-
-
+	alert('la Suma es: ' + resultado);
 
 }
 
@@ -28,20 +29,20 @@ function sumar()
 function restar()
 
 {
-	
 
 	var numeroUno;
 	var numeroDos;
-	var resta;
+	var resultado;
 
-	numeroUno = parseInt(document.getElementById('numeroUno').value);	
-	numeroDos = parseInt(document.getElementById('numeroDos').value);
+	numeroUno = document.getElementById('numeroUno').value;	
+	numeroDos = document.getElementById('numeroDos').value;
 
-	resta = numeroUno - numeroDos;
+	numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
+	
+	resultado = numeroUno - numeroDos;
 
-	alert('la Resta es: ' + resta);
-
-
+	alert('la Resta es: ' + resultado);
 
 }
 
@@ -51,19 +52,16 @@ function multiplicar()
 
 { 
 
-
 	var numeroUno;
 	var numeroDos;
-	var multiplicar;
+	var resultado;
 
-	numeroUno = parseInt(document.getElementById('numeroUno').value);
-	numeroDos = parseInt(document.getElementById('numeroDos').value);
+	numeroUno = document.getElementById('numeroUno').value;
+	numeroDos = document.getElementById('numeroDos').value;
 
-	multiplicar = numeroUno * numeroDos;	
+	resultado = numeroUno * numeroDos;	
 	
-
-	alert('el Producto es: ' + multiplicar);
-
+	alert('el Producto es: ' + resultado);
 
 }
 
@@ -72,18 +70,19 @@ function multiplicar()
 function dividir()
 {
 	
-
 	var numeroUno;
 	var numeroDos;
-	var dividir;
+	var resultado;
 
-	numeroUno = parseInt(document.getElementById('numeroUno').value);
-	numeroDos = parseInt(document.getElementById('numeroDos').value);
+	numeroUno = document.getElementById('numeroUno').value;
+	numeroDos = document.getElementById('numeroDos').value;
 
-	dividir = numeroUno / numeroDos;
+	resultado = numeroUno / numeroDos;
 
-	alert('el Cociente es: ' + dividir);
-
+	alert('el Cociente es: ' + resultado);
 
 }
 
+/*
+no hace falta parsear en * y /
+*/
