@@ -8,46 +8,58 @@ function Sumar ()
 	var precioUno;
 	var precioDos;
 	var precioTres;
-	var suma;
+	var resultado;
 
-	precioUno = parseInt(document.getElementById('PrecioUno').value);
-	precioDos = parseInt(document.getElementById('PrecioDos').value);
-	precioTres = parseInt(document.getElementById('PrecioTres').value);
+	precioUno = document.getElementById('PrecioUno').value;
+	precioDos = document.getElementById('PrecioDos').value;
+	precioTres = document.getElementById('PrecioTres').value;
 
-	suma = precioUno + precioDos + precioTres;
+	precioUno = parseInt(precioUno);
+	precioDos = parseInt(precioDos);
+	precioTres = parseInt(precioTres); 
 
-	alert(suma);
+	resultado = precioUno + precioDos + precioTres;
 
+	alert(resultado);
 }
+
 function Promedio () 
 {
 	var precioUno;
 	var precioDos;
 	var precioTres;
-	var promedio;
+	var resultado;
 
-	precioUno = parseInt(document.getElementById('PrecioUno').value);
-	precioDos = parseInt(document.getElementById('PrecioDos').value);
-	precioTres = parseInt(document.getElementById('PrecioTres').value);
+	precioUno = document.getElementById('PrecioUno').value;
+	precioDos = document.getElementById('PrecioDos').value;
+	precioTres = document.getElementById('PrecioTres').value;
 
-	promedio = (precioUno + precioDos + precioTres)/3;
+	precioUno = parseInt(precioUno);
+	precioDos = parseInt(precioDos);
+	precioTres = parseInt(precioTres);
 
-	alert(promedio);
+	resultado = (precioUno + precioDos + precioTres)/3;
+
+	alert(resultado);
 }
 function PrecioFinal () 
 {
 	var precioUno;
 	var precioDos;
 	var precioTres;
-	var suma;
+	var resultado;
 	var precioFinal;
 
-	precioUno = parseInt(document.getElementById('PrecioUno').value);
-	precioDos = parseInt(document.getElementById('PrecioDos').value);
-	precioTres = parseInt(document.getElementById('PrecioTres').value);
+	precioUno = document.getElementById('PrecioUno').value;
+	precioDos = document.getElementById('PrecioDos').value;
+	precioTres = document.getElementById('PrecioTres').value;
 
-	suma = precioUno + precioDos + precioTres;
-	precioFinal = suma + (suma * 0.21);
+	precioUno = parseInt(precioUno);
+	precioDos = parseInt(precioDos);
+	precioTres = parseInt(precioTres);
+
+	resultado = precioUno + precioDos + precioTres;
+	precioFinal = resultado + (resultado * 0.21);
 
 	alert(precioFinal);
 	

@@ -21,8 +21,11 @@ function Rectangulo ()
 	var perimetro;
 	var cantidadAlambre;
 
-	largo = parseInt(document.getElementById('Largo').value);
-	ancho = parseInt(document.getElementById('Ancho').value);
+	largo = document.getElementById('Largo').value;
+	ancho = document.getElementById('Ancho').value;
+
+	largo = parseInt(largo);
+	ancho = parseInt(ancho);
 
 	perimetro = 2 * (largo + ancho);
 	cantidadAlambre = perimetro * 3;
@@ -41,16 +44,16 @@ function Circulo ()
 	var perimetro;
 	var cantidadAlambre;
 
-	radio = parseInt(document.getElementById('Radio').value);
+	radio = document.getElementById('Radio').value;
+
+	radio = parseInt(radio);
+
 	pi = 3.14;
 	perimetro = pi * (2 * radio);
 	cantidadAlambre = 3 * perimetro;
 
 	alert('La cantidad de alambre a comprar es: ' + cantidadAlambre);
 	
-	
-
-
 }
 
 
@@ -64,8 +67,11 @@ function Materiales ()
 	var cantidadBolsasCemento;
 	var cantidadBolsasCal;
 
-	largo = parseInt(document.getElementById('Largo').value);
-	ancho = parseInt(document.getElementById('Ancho').value);
+	largo = document.getElementById('Largo').value;
+	ancho = document.getElementById('Ancho').value;
+
+	largo = parseInt(largo);
+	ancho = parseInt(ancho);
 
 	area = largo * ancho;
 
