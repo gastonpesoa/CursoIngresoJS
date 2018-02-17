@@ -21,7 +21,26 @@
 	   else
 	   {
 		alert("Nota del examen: " + resultado + ". 'APROBÓ'");
-	   }
-	}		
+	   }//if(resultado < 4)
+	}//if(resultado > 8)		
+/*
+
+	var numeroRandom;
+
+	numeroRandom = Math.floor(Math.random() * 10) + 1;
+
+	if (numeroRandom > 8) 
+	{
+		alert("EXCELENTE" + numeroRandom);
+	}
+	else
+	{
+
+	}
+
+*/
 
 }//FIN DE LA FUNCIÓN
+
+
+
