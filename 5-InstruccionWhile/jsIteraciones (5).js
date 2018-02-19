@@ -4,7 +4,10 @@ function Mostrar()
 var sexo = prompt("ingrese f ó m .");
 
 
-
-document.getElementById('Sexo').value=sexo;
+while(sexo == "f" || sexo == "m")
+{
+	document.getElementById('Sexo').value = sexo;
+	break;
+}
 
 }//FIN DE LA FUNCIÓN
