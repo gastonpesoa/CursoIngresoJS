@@ -6,6 +6,82 @@
 	var contador=0;
 	// declarar variables
 
+	var numUno;
+	var numDos;
+	var maximo;
+	var minimo;	
+	
+	var respuesta = 'si';
+
+	
+
+	while(respuesta != 'no')
+	
+	{	
+		
+	
+	
+		numUno = prompt("Ingrese un numero","0");
+
+		respuesta = prompt("¿Desea agregar otro numero?","si/no");
+
+		contador++;
+
+		numDos = prompt("Ingrese un numero","0");
+
+		respuesta = prompt("¿Desea agregar otro numero?","si/no");
+
+		contador++;
+
+			while(numUno > numDos)
+			{
+				numUno = maximo;
+				numDos = minimo;
+			}
+			while(numDos > numUno)
+			{
+				numDos = maximo;
+				numUno = minimo;
+			}
+	
+	}//while(respuesta != 'no')
+
+
+	
+	document.getElementById('maximo').value = maximo;
+	document.getElementById('minimo').value = minimo;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*
+	var contador=0;
+	// declarar variables
+
 	
 	var maximo;
 	var minimo;	
@@ -49,6 +125,8 @@
 
 	document.getElementById('maximo').value = maximo;
 	document.getElementById('minimo').value = minimo;
+	*/
+
 
 
 
