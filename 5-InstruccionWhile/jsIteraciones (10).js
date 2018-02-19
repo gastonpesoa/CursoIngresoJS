@@ -29,6 +29,8 @@
 	contadorPositivos = 0;
 	contadorCeros = 0;
 	contadorPares = 0;
+	negativos = 0;
+	positivos = 0;
 	respuesta = "si";
 
 	while(respuesta != "no")
