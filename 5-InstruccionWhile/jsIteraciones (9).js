@@ -1,11 +1,8 @@
 ﻿function Mostrar()
 
 {
-
-	
 	var contador=0;
 	// declarar variables
-
 	var numUno;
 	var numDos;
 	var maximo;
@@ -13,14 +10,9 @@
 	
 	var respuesta = 'si';
 
-	
-
 	while(respuesta != 'no')
 	
 	{	
-		
-	
-	
 		numUno = prompt("Ingrese un numero","0");
 
 		respuesta = prompt("¿Desea agregar otro numero?","si/no");
@@ -33,21 +25,18 @@
 
 		contador++;
 
-			while(numUno > numDos)
+			if(numUno > numDos) 
 			{
-				numUno = maximo;
-				numDos = minimo;
+				maximo = numUno;
+				minimo = numDos; 
 			}
-			while(numDos > numUno)
+			if(numDos > numUno)
 			{
-				numDos = maximo;
-				numUno = minimo;
+				 maximo = numDos;
+				minimo = numUno;
 			}
 	
 	}//while(respuesta != 'no')
-
-
-	
 	document.getElementById('maximo').value = maximo;
 	document.getElementById('minimo').value = minimo;
 

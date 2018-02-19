@@ -2,12 +2,8 @@
 function Mostrar()
 
 {
-
-	
 	var contador = 0;
-	
 	var acumulador = 0;
-	
 	var respuesta = 'si';
 	
 	while(respuesta == 'si')
@@ -23,16 +19,7 @@ function Mostrar()
 		respuesta = prompt("¿Desea continuar la suma?:","si/no");
 
 		contador++;
-
 	}
-
-	
-
-
-document.getElementById('suma').value = acumulador;
-
+	document.getElementById('suma').value = acumulador;
 	document.getElementById('promedio').value = acumulador/contador;
-
-
-
 }//FIN DE LA FUNCIÓN

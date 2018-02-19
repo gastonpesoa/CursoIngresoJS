@@ -1,23 +1,15 @@
 ﻿function Mostrar()
 
 {
-
-	
 	var contador = 0;
-	
 	var positivo = 0;
-	
 	var negativo = 1;
-	
-	
 	var respuesta = 'si';
 
 	while(respuesta == "si")
 	{
 		var numero;
-
 		numero = prompt("Ingrese un numero: ","0");
-
 		numero = parseInt(numero);
 		
 		while(numero > 0)
@@ -35,13 +27,8 @@
 
 		contador++; 
 	}
-
-
-
-
 	document.getElementById('suma').value = positivo;
-	
-document.getElementById('producto').value = negativo;
+	document.getElementById('producto').value = negativo;
 	
 	/*
 	var contador = 0;
