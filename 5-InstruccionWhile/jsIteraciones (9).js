@@ -14,6 +14,7 @@
 	{	
 		contador++;
 		numero = prompt("Ingrese un numero","0");
+		numero = parseInt(numero);
 
 			if (contador == 1) 
 			{
