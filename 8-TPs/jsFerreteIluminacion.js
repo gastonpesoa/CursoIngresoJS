@@ -21,6 +21,35 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un
 
 function CalcularPrecio () 
 {
+	var cantidad;
+	var marca;
+	var precioUni;
+
+	cantidad = document.getElementById('Cantidad').value;
+	marca = document.getElementById('Marca').value;
+
+	precioUni = cantidad * 35;
+
+	if(cantidad > 5)
+	{
+		descuento = 0.5;
+	}
+	else(cantidad == 5)
+	{
+		if(marca == "ArgentinaLuz")
+	}
+
+	precioFinal = precioUni + (precioUni * descuento);
+
+
+
+
+
+
+
+
+
+
 /*
 	//lo que cambia es el porcentaje
 
@@ -91,6 +120,7 @@ function CalcularPrecio ()
 
 
 */
+/*
 	switch(cantidad)
 	{
 		case 1:
@@ -109,7 +139,7 @@ function CalcularPrecio ()
 				break;
 			}
 
-			*/
+			
 		//copio pego if cantidad 3
 			break;
 		case 4:
@@ -126,7 +156,7 @@ function CalcularPrecio ()
 		}
 
 
-		*/
+		
 		//copio pego if cantidad 4
 		break;
 		case 5:
@@ -162,8 +192,8 @@ function CalcularPrecio ()
 		default:
 
 	}
-
 */
+
 	/*
 	var cantidad;
 	var marca;

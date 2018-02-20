@@ -16,6 +16,7 @@ primo o no.
 e.	Se pedirán un número positivo y se mostrará la cantidad de números 
 Primos desde el número ingresado hasta el cero.
 */
+
 function ComenzarIngreso () 
 {
  	
@@ -23,7 +24,13 @@ function ComenzarIngreso ()
 
 function NumerosPares()
 {
+	var numero;
+	numero = document.getElementById('numero').value;
 
+	while()
+	{
+		
+	}
 }
 
 function NumerosImpares()
@@ -43,5 +50,5 @@ function VerificarPrimo()
 
 function NumerosPrimos()
 {
-	
+
 }
