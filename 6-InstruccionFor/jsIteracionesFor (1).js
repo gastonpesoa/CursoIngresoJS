@@ -12,7 +12,6 @@ function Mostrar()
 	var contador7 = 0;
 	var contador8 = 0;
 	var contador9 = 0;
-	var contador10 = 0;
 
 	for(i = 0; i < 100; i++)
 	{
@@ -49,10 +48,7 @@ function Mostrar()
 				break;
 			case 9:
 				contador9++;
-				break;
-			case 10:
-				contador10++;
-				break;					
+				break;				
 		}
 	}//for(i = 0; i < 100; i++)
 
@@ -66,7 +62,6 @@ function Mostrar()
 	document.write("7: " + contador7 + "<br>");
 	document.write("8: " + contador8 + "<br>");
 	document.write("9: " + contador9 + "<br>");
-	document.write("10: " + contador10 + "<br>");
 }
 
 		/*for(i = 1; i < 11; i++)
