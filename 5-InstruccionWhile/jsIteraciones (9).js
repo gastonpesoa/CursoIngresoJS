@@ -3,8 +3,7 @@
 {
 	var contador=0;
 	// declarar variables
-	var numUno;
-	var numDos;
+	var numero;
 	var maximo;
 	var minimo;	
 	
@@ -13,28 +12,27 @@
 	while(respuesta != 'no')
 	
 	{	
-		numUno = prompt("Ingrese un numero","0");
-
-		respuesta = prompt("¿Desea agregar otro numero?","si/no");
-
 		contador++;
+		numero = prompt("Ingrese un numero","0");
 
-		numDos = prompt("Ingrese un numero","0");
-
-		respuesta = prompt("¿Desea agregar otro numero?","si/no");
-
-		contador++;
-
-			if(numUno > numDos) 
+			if (contador == 1) 
 			{
-				maximo = numUno;
-				minimo = numDos; 
+				maximo = numero;
+				minimo = numero; 
 			}
-			if(numDos > numUno)
+			else
 			{
-				 maximo = numDos;
-				minimo = numUno;
+				if (numero > maximo)
+				{
+					maximo = numero;
+				}
+				if (numero < minimo) 
+				{
+					minimo = numero;
+				}
 			}
+
+	respuesta = prompt("¿Desea agregar otro numero?","si/no");
 	
 	}//while(respuesta != 'no')
 	document.getElementById('maximo').value = maximo;
