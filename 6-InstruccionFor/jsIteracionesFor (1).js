@@ -29,6 +29,7 @@ function Mostrar()
 	{
 		numeroRandom = Math.floor(Math.random() * 10);
 		//document.write(numeroRandom);
+
 		switch(numeroRandom)
 		{
 			case 0:
@@ -51,7 +52,7 @@ function Mostrar()
 				break;
 			case 6:
 				porcen6 = (contador6 / (iteraciones)) * 100;
-				console.log(porcen6);
+				//console.log(porcen6);
 				if (porcen6 > 7) 
 				{
 					contador--;
@@ -76,43 +77,43 @@ function Mostrar()
 
 	porcen0 = (contador0/(contador + 1))*100;
 	porcen0 = Math.round(porcen0);
-	document.write("Cantidad de 0: " + contador0 + "---" + porcen0 + " %: " + "<br>");
+	document.write("Cantidad de 0: " + contador0 + " --- " + porcen0 + " %" + "<br>");
 
 	porcen1 = (contador1/(contador + 1))*100;
 	porcen1 = Math.round(porcen1);
-	document.write("Cantidad de 1: " + contador1 + "---" + porcen1 + " %: " + "<br>");
+	document.write("Cantidad de 1: " + contador1 + " --- " + porcen1 + " %" + "<br>");
 
 	porcen2 = (contador2/(contador + 1))*100;
 	porcen2 = Math.round(porcen2);
-	document.write("Cantidad de 2: " + contador2 + "---" + porcen2 + " %: " + "<br>");
+	document.write("Cantidad de 2: " + contador2 + " --- " + porcen2 + " %" + "<br>");
 
 	porcen3 = (contador3/(contador + 1))*100;
 	porcen3 = Math.round(porcen3);
-	document.write("Cantidad de 3: " + contador3 + "---" + porcen3 + " %: " + "<br>");
+	document.write("Cantidad de 3: " + contador3 + " --- " + porcen3 + " %" + "<br>");
 
 	porcen4 = (contador4/(contador + 1))*100;
 	porcen4 = Math.round(porcen4);
-	document.write("Cantidad de 4: " + contador4 + "---" + porcen4 + " %: " + "<br>");
+	document.write("Cantidad de 4: " + contador4 + " --- " + porcen4 + " %" + "<br>");
 
 	porcen5 = (contador5/(contador + 1))*100;
 	porcen5 = Math.round(porcen5);
-	document.write("Cantidad de 5: " + contador5 + "---" + porcen5 + " %: " + "<br>");
+	document.write("Cantidad de 5: " + contador5 + " --- " + porcen5 + " %" + "<br>");
 
 	porcen6 = (contador6/(contador + 1))*100;
 	porcen6 = Math.round(porcen6);
-	document.write("Cantidad de 6: " + contador6 + "---" + porcen6 + " %: " + "<br>");
+	document.write("Cantidad de 6: " + contador6 + " --- " + porcen6 + " %" + "<br>");
 
 	porcen7 = (contador7/(contador + 1))*100;
 	porcen7 = Math.round(porcen7);
-	document.write("Cantidad de 7: " + contador7 + "---" + porcen7 + " %: " + "<br>");
+	document.write("Cantidad de 7: " + contador7 + " --- " + porcen7 + " %" + "<br>");
 
 	porcen8 = (contador8/(contador + 1))*100;
 	porcen8 = Math.round(porcen8);
-	document.write("Cantidad de 8: " + contador8 + "---" + porcen8 + " %: " + "<br>");
+	document.write("Cantidad de 8: " + contador8 + " --- " + porcen8 + " %" + "<br>");
 
 	porcen9 = (contador9/(contador + 1))*100;
 	porcen9 = Math.round(porcen9);
-	document.write("Cantidad de 9: " + contador9 + "---" + porcen9 + " %: " + "<br>");
+	document.write("Cantidad de 9: " + contador9 + " --- " + porcen9 + " %" + "<br>");
 
 
 }
@@ -129,8 +130,7 @@ function Mostrar()
 
 
 
-/*
-	var i;
+/*	var i;
 	
 	for(i = 1; i < 11; i++)
 	{
@@ -160,6 +160,5 @@ var i = 0;
 			continue;
 		}
 		document.write("break" + i + "<br>");
-	}
+	}*/
 
-*/

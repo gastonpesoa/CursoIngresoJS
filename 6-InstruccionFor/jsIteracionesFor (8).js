@@ -1,45 +1,39 @@
 ﻿function Mostrar()
 
 {
-	var i;
+	var anterior;
 	var numero;
+	var contadorDivisor = 0;
 
 	numero = prompt("Ingrese un numero","0");
 
 	numero = parseInt(numero);
 
-	for(i=1; i<numero; i++)
+	document.write("Se ingreso el numero: " + numero);
+
+	for(anterior = 2; anterior < numero; anterior++)
 	{
-		if (numero / i == Math.round(numero / i) && i != 1 && i != numero)
+		if (numero % anterior == 0)
+		{	
+			document.write("<br>" + "El numero es divisible por: " + anterior);
+			contadorDivisor++;
+		}
+		if (anterior > (numero / 2))
 		{
-			alert("Numero no primo");
 			break;
 		}
-		else
-		{
-			alert("Numero no primo");
-			break;
-		}
+	}//for(anterior = 2; anterior < numero; anterior++)
+
+	if (contadorDivisor == 0)
+	{
+		document.write("<br>" + "El numero 'es primo' ya que no es divisible");
 	}
+	else
+	{
+		document.write("<br>" + "El numero 'no es primo' ya que es divisible por " + contadorDivisor + " numeros");
+	}
+
 }//FIN DE LA FUNCIÓN
 
 
 
-
-
-/*
-for(i = 2; i < numero; i++)
-	{	
-		if (numero % i == 0)
-		{
-			alert("Numero no primo");
-			break;
-		}
-		else
-		{
-			alert("Numero primo");
-			break;
-		}
-	}
-
-*/
