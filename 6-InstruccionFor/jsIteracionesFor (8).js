@@ -1,11 +1,6 @@
 ﻿function Mostrar()
 
 {
-
-
-
-
-
 	var i;
 	var numero;
 
@@ -25,10 +20,7 @@
 			alert("Numero no primo");
 			break;
 		}
-	
 	}
-	
-	
 }//FIN DE LA FUNCIÓN
 
 
