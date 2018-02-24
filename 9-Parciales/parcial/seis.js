@@ -6,6 +6,31 @@ function Mostrar()
 	while(contadorDias > 24)
 	{
 		importe = prompt("Ingrese el importe: ","0");
+		importe = parseInt(importe);
+
+		while(importe < 0)
+		{
+			alert("Ingrese un importe mayor a cero")
+			importe = prompt("Ingrese el importe: ","0");
+			importe = parseInt(importe);
+		}
+
+		if (importe == 1) 
+		{
+			maximo = importe;
+			minimo = importe; 
+		}
+		else
+		{
+			if (importe > maximo)
+			{
+				maximo = importe;
+			}
+			if (importe < minimo) 
+			{
+				minimo = importe;
+			}
+		}
 	}
 	
 }
