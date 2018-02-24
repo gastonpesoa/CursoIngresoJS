@@ -65,7 +65,7 @@ function Mostrar()
 		nota = parseInt(nota);
 
 		//valido nota
-		while(nota < 0 || nota > 10)
+		while(nota < 0 || nota > 10 || isNaN(nota))
 		{
 			alert("Ingrese una nota entre 0 y 10");
 			nota = prompt("Ingrese la nota: ","0");
@@ -80,7 +80,7 @@ function Mostrar()
 		sexo = prompt("Ingrese el sexo: ","f/m");
 
 		//valido sexo
-		while(sexo !== "f" && sexo !== "m")
+		while(sexo !== "f" && sexo !== "m" || !isNaN(sexo))
 		{
 			alert("Debe ingresar 'f' o 'm'");
 			sexo = prompt("Ingrese el sexo: ","f/m");
