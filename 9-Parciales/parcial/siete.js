@@ -1,7 +1,23 @@
 function Mostrar()
 
 {
-	var i;
+	
+	var nota;
+
+	nota = prompt("Ingrese la nota: ","0");
+	nota = parseInt(nota);
+
+	while(nota < 0 || nota > 10 || nota == isNaN())
+		{
+			alert("Ingrese una nota entre 0 y 10");
+			nota = prompt("Ingrese la nota: ","0");
+			nota = parseInt(nota);
+		}
+
+
+}
+
+/*var i;
 	var nota = [];
 	var sexo = [];
 	var promedio;
@@ -28,8 +44,4 @@ function Mostrar()
 	}
 
 	console.log(nota);
-	console.log(sexo);
-
-
-
-}
+	console.log(sexo);*/
