@@ -26,9 +26,6 @@ function Mostrar()
 		resultado = numeroUno + numeroDos;
 	   }
 	}
-
-
+	
 	document.write(resultado);
-
-
 }
