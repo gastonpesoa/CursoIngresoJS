@@ -31,11 +31,11 @@ function NumerosPares()
 	numero = document.getElementById('numero').value;
 	numero = parseInt(numero);
 
-	for(i = numero; i > 0; i--)
+	for (i = numero; i > 0; i--)
 	{
-		if (i%2 == 0) 
+		if (i % 2 == 0) 
 		{
-			contador = contador + 1;
+			contador++;
 		}
 	}
 	alert("La cantidad de numeros pares desde el numero ingresado hasta el cero es: " + contador);
@@ -52,9 +52,9 @@ function NumerosImpares()
 
 	for(i = numero; i > 0; i--)
 	{
-		if (i%2 !== 0) 
+		if (i % 2 !== 0) 
 		{
-			contador = contador + 1;
+			contador++;
 		}
 	}
 	alert("La cantidad de numeros impares desde el numero ingresado hasta el cero es: " + contador);
@@ -69,11 +69,11 @@ function NumerosDivisibles()
 	numero = document.getElementById('numero').value;
 	numero = parseInt(numero);
 
-	for(i = 1; i < 101; i++)
+	for (i = 1; i < 101; i++)
 	{
-		if (i%numero == 0) 
+		if (i % numero == 0) 
 		{
-			contador = contador + 1;
+			contador++;
 		}
 	}
 	alert("La cantidad de numeros divisibles, por el numero ingresado, desde el 1 hasta el 100 es: " + contador);
@@ -83,28 +83,89 @@ function VerificarPrimo()
 {
 	var i;
 	var numero;
+	var contadorDivisor = 0;
 
 	numero = document.getElementById('numero').value;
 	numero = parseInt(numero);
 
-	for(i = 1; i < numero; i++)
+	for(i = 2; i < numero; i++)
 	{
-		if (numero / i == Math.round(numero / i) && i != 1 && i != numero) 
+		if (numero % i == 0) 
 		{
-			alert("Numero no primo");
-			break;
+			contadorDivisor++;
 		}
-			else
+		if (i == numero / 2) 
 		{
-			alert("Numero primo");
 			break;
 		}
 	
+	}//for(i = 2; i < numero; i++)
+
+	if (contadorDivisor == 0) 
+	{
+		alert("El numero 'es' primo");
+	}
+	else 
+	{
+		alert("El numero 'no es' primo");
 	}
 
 }
 
 function NumerosPrimos()
 {
+	var numero;
+	var anterior;
+	var contadorDivisor = 0;
+	var contadorPrimo = 0;
 
-}
+	numero = document.getElementById('numero').value;
+	numero = parseInt(numero);
+
+	for (anterior = numero; anterior > 0; anterior--)
+	{
+		for (i = anterior; i > 0; i--)
+		{
+			if (anterior % i == 0) 
+			{
+				contadorDivisor++;
+			}
+			if (i == anterior / 2) 
+			{
+				break;
+			}
+		}
+
+		if (contadorDivisor == 0) 
+		{
+			contadorPrimo++;
+		}
+	}
+	alert("La cantidad de numeros primos desde el numero ingresado hasta el cero es: " + contadorPrimo);
+
+}//function NumerosPrimos()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
