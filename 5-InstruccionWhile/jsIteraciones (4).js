@@ -12,3 +12,13 @@ function Mostrar()
 	document.getElementById('Numero').value = numero;
 
 }//FIN DE LA FUNCIÓN
+
+/* 	0 || 0 = 0
+	0 || 1 = 1
+	1 || 0 = 1
+	1 || 1 = 1 
+
+	0 && 0 = 0
+	0 && 1 = 0
+	1 && 0 = 0
+	1 && 1 = 1	*/

@@ -1,67 +1,91 @@
-﻿function Mostrar()
+﻿/*	1-Suma de los negativos. 
+	2-Suma de los positivos. 
+	3-Cantidad de positivos. 
+	4-Cantidad de negativos. 
+	5-Cantidad de ceros. 
+	6-Cantidad de números pares. 
+	7-Promedio de positivos. 
+	8-Promedios de negativos. 
+	9-Diferencia entre positivos y negativos, (positvos-negativos).	*/
 
-{
-	var contador;
-	//declarar contadores y variables 
-	var contadorNegativos;
-	var contadorPositivos;
-	var contadorCeros;
-	var contadorPares;
+function Mostrar()
+
+{	//declaro variables
+	var numero;
+	var respuesta = "si";
+
+	//declaro e incio contadores 
+	var contador = 0;
+	var contadorNegativos = 0;
+	var contadorPositivos = 0;
+	var contadorCeros = 0;
+	var contadorPares = 0;
 	
-	var negativos;
-	var positivos;
+	//declaro e inicio acumuladores
+	var negativos = 0;
+	var positivos = 0;
 
+	//declaro variables de operaciones
 	var promedioPositivos;
 	var promedioNegativos;
 	var diferenciaPositivosNegativos;	
 
-	var numero;
-
-	var respuesta;
-
-	contador = 0;
-	contadorNegativos = 0;
-	contadorPositivos = 0;
-	contadorCeros = 0;
-	contadorPares = 0;
-	negativos = 0;
-	positivos = 0;
-	respuesta = "si";
-
-	while(respuesta != "no")
-	
+	//Validacion
+	while (respuesta != "no")
 	{
+		//Ingreso del numero
 		numero = prompt("Ingrese un numero","0");
 		numero = parseInt(numero);
-			
-		if(numero < 0)
+		contador++;	
+		
+		//1-2-3-4-5-Cantidad y suma de negativos, ceros y positivos
+		if (numero < 0)
 		{
 			negativos = negativos + numero;
 			contadorNegativos++;
 		}
 		else
 		{
-			positivos = positivos + numero;
-			contadorPositivos++;
-		}
-		if(numero == 0)
-		{
-			contadorCeros++;
-		}
-		if(numero%2 == 0)
+			if (numero == 0)
+			{
+				contadorCeros++;
+			}
+			else
+			{
+				positivos = positivos + numero;
+				contadorPositivos++;
+			}//if (numero == 0)
+		}//if (numero < 0)
+		
+		//6-Cantidad de números pares. 
+		if (numero % 2 == 0)
 		{
 			contadorPares++;
 		}
 
 		respuesta = prompt("¿Desea ingresar otro numero?: ","si/no");
+	}//while (respuesta != "no")
 
-		contador++;		
-	}
-
+	//7-Promedio de positivos. 
 	promedioPositivos = positivos / contadorPositivos;
+
+	/*if (promedioPositivos !== isNaN(promedioPositivos)) 
+	{
+		promedioPositivos = 0;
+	}*/
+
+	//8-Promedios de negativos. 
 	promedioNegativos = negativos / contadorNegativos;
+
+	/*if (promedioNegativos !== isNaN(promedioNegativos)) 
+	{
+		promedioNegativos = 0;
+	}*/
+	
+	//9-Diferencia entre positivos y negativos, (positvos-negativos).
 	diferenciaPositivosNegativos = positivos + negativos;
 
+	//Muestro los resultados
 	document.write("La suma de los negativos es: " + negativos + " ");
 	document.write("<br>" + "La suma de los positivos es: " + positivos + " ");
 	document.write("<br>" + "La cantidad de positivos es: " + contadorPositivos + " ");
@@ -69,13 +93,7 @@
 	document.write("<br>" + "La cantidad de ceros es: " + contadorCeros + " ");
 	document.write("<br>" + "La cantidad de numeros pares es: " + contadorPares + " ");
 	document.write("<br>" + "El promedio de los numeros positivos es: " + promedioPositivos + " ");
-	document.write("<br>" + "El promedio de los numeros negativos es: " +promedioNegativos + " ");
+	document.write("<br>" + "El promedio de los numeros negativos es: " + promedioNegativos + " ");
 	document.write("<br>" + "Y la diferencia entre positivos y negativos es: " + diferenciaPositivosNegativos + " ");	
-
-
-
-
-
-
 }//FIN DE LA FUNCIÓN
 

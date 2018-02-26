@@ -13,3 +13,13 @@ while(sexo !== "f" && sexo !== "m")
 document.getElementById('Sexo').value = sexo;
 
 }//FIN DE LA FUNCIÓN
+
+/* 	0 && 0 = 0
+	0 && 1 = 0
+	1 && 0 = 0
+	1 && 1 = 1
+	
+	0 || 0 = 0
+	0 || 1 = 1
+	1 || 0 = 1
+	1 || 1 = 1	*/

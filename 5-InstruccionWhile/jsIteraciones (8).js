@@ -11,21 +11,25 @@
 		var numero;
 		numero = prompt("Ingrese un numero: ","0");
 		numero = parseInt(numero);
+
+		while(numero == 0)
+		{
+			numero = prompt("Ingrese un valor mayor o menor a cero!: ","0");
+			numero = parseInt(numero);
+		}
 		
-		while(numero > 0)
+		if (numero > 0)
 		{
 			positivo = positivo + numero;
-			break;
 		}
-		while(numero < 0)
+		else
 		{
-			negativo = negativo * numero;
-			break;			
+			negativo = negativo * numero;				
 		} 
 
-		respuesta = prompt("¿Desea continuar la cuenta?","si/no");
-
 		contador++; 
+		respuesta = prompt("¿Desea continuar la cuenta?","si/no");
+		
 	}
 	document.getElementById('suma').value = positivo;
 	document.getElementById('producto').value = negativo;

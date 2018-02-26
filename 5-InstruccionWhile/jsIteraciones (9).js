@@ -1,7 +1,7 @@
 ﻿function Mostrar()
 
 {
-	var contador=0;
+	var contador = 0;
 	// declarar variables
 	var numero;
 	var maximo;
@@ -9,12 +9,12 @@
 	
 	var respuesta = 'si';
 
-	while(respuesta != 'no')
+	while (respuesta != 'no')
 	
 	{	
-		contador++;
 		numero = prompt("Ingrese un numero","0");
 		numero = parseInt(numero);
+		contador++;
 
 			if (contador == 1) 
 			{
