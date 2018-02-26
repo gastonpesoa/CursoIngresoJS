@@ -2,14 +2,13 @@ function Mostrar()
 
 {
  
-	var importe;
-	var importeFinal;
+	var importeBruto;
+	var importeFinal;	
 
-	importe = prompt("Ingrese el importe del producto", "0");
-	
-	importeFinal = importe * 0.75;
+	importeBruto = prompt("Ingrese el importe: ","0");
+	importeBruto = parseInt(importeBruto);
+	importeFinal = importeBruto * 0.75; 
 
 	document.getElementById('importeFinal').value = importeFinal;
-
-
 }
+

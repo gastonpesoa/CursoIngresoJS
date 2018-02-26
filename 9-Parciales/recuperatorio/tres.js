@@ -1,21 +1,23 @@
 function Mostrar()
+
 {
-	var precio1;
-	var precio2;
-	var precio3;
+	
+	var precioUno;
+	var precioDos;
+	var precioTres;
 	var suma;
 	var promedio;
 
-	precio1 = document.getElementById('precioUno').value;
-	precio2 = document.getElementById('precioDos').value;
-	precio3 = document.getElementById('precioTres').value;
+	precioUno = document.getElementById('precioUno').value;
+	precioUno = parseInt(precioUno);
+	precioDos = document.getElementById('precioDos').value;	
+	precioDos = parseInt(precioDos);
+	precioTres = document.getElementById('precioTres').value;	
+	precioTres = parseInt(precioTres);
 
-	precio1 = parseInt(precio1);
-	precio2 = parseInt(precio2);
-	precio3 = parseInt(precio3);
+	suma = precioUno + precioDos + precioTres;
+	promedio = suma / 3;
+	promedio = promedio;
 
-	suma = precio1 + precio2 + precio3;
-	promedio = (suma) / 3;
-
-	alert("La suma de los precios es " + suma + " y el promedio es " + promedio);
+	alert("La suma de los precios ingresados es: " + suma + " y el promedio es " + promedio);
 }
