@@ -1,27 +1,91 @@
-//Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
+﻿//Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
 function Mostrar()
+
 {
-	var i;
-	var dia = [];
 
-	for(i = 0; i < 7; i++)
+	var importe;
+	
+	var importeMayor;
+	
+	var importeMenor;
+	
+	
+	var dia = 0;
+
+
+	
+	while(dia < 24)
+	
 	{
-		dia[i] = prompt("Ingrese el importe: ");
+		
+		importe = prompt("Ingrese el importe","0");
+		
+		importe = parseInt(importe);
+		
+		dia++;
 
-		if(dia[i] == 0)
+	
+	
+		while(importe <= 0)
+	
 		{
-			alert("El valor no debe ser igual a 0");
-			dia[i] = prompt("Vuelva a ingresarlo");
+			
+			importe = prompt("Ingrese un valor mayor a 'cero': ","0");
+			
+			importe = parseInt(importe);
+		
+		}
+
+		
+
+		if (dia == 1) 
+		
+		{
+			
+			importeMayor = importe;
+			
+			importeMenor = importe;
+		
 		}
 		
-	}
 
-	dia.sort(function(a, b){return a - b});
-
-	alert("El mayor importe fue :" + dia[dia.length - 1] + 
-	" y el menor: " + dia[0]);
-
-	console.log(dia);
+		else
+		
+		{
+			
+			if (importe > importeMayor) 
+		
+			{
+				
+				importeMayor = importe;
+			
+			}
+			
+			if (importe < importeMenor) 
+			
+			{
+				
+			importeMenor = importe;
+		
+			}
+		
+		}//if (dia == 1) 
+		
 	
+	}//while(dia < 24)
+
+	
+
+	document.write("El importe mayor es: " + importeMayor);
+	
+	document.write("<br>" + "El importe menor es: " + importeMenor);
+
+
 }
+
+
+
+
+
+
 
