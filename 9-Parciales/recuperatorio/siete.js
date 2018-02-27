@@ -1,6 +1,7 @@
 /*Realizar el algoritmo que permita el ingreso por prompt de 
 edades (validar entre 0 y 100) y 
 el sexo (validar el sexo “f” o “m”) de 100 personas, informar por alert: 
+
 a) el promedio de edad. 
 b) la edad más baja. 
 c) la cantidad de varones que su edad sea mayor o igual a 20.*/
@@ -19,7 +20,7 @@ function Mostrar()
 	var contadorVaronesEdadMayor = 0;
 
 	//Verifico cantidad
-	while (contador < 100)
+	while (contador < 10)
 	{
 		//Pido la edad
 		edad = prompt("Ingrese la edad: ","0");
@@ -67,6 +68,11 @@ function Mostrar()
 	
 	promedio = sumaEdades / contador;
 
-	//muestro datos
-	document.write()
+	//Muestro datos
+	//a) el promedio de edad. 
+	alert("El promedio de edades es: " + promedio);
+	//b) la edad más baja. 
+	alert("La edad más baja es: " + edadMenor);
+	//c) la cantidad de varones que su edad sea mayor o igual a 20.
+	alert("La cantidad de varones con edad mayor o igual a 20 es: " + contadorVaronesEdadMayor);
 }
