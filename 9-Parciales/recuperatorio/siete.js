@@ -20,7 +20,7 @@ function Mostrar()
 	var contadorVaronesEdadMayor = 0;
 
 	//Verifico cantidad
-	while (contador < 10)
+	while (contador < 100)
 	{
 		//Pido la edad
 		edad = prompt("Ingrese la edad: ","0");
