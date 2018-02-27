@@ -1,5 +1,4 @@
 function Mostrar()
-
 {
 	var peso;
 	var menosPesado;
@@ -7,18 +6,18 @@ function Mostrar()
 
 	var contador = 0;
 	
-	while (contador < 10)
+	while (contador < 50)
 	{
 		peso = prompt("Ingrese el peso en kilos: ","0");
 		peso = parseInt(peso);
+
+		contador++;
 
 		while (peso <= 0)
 		{
 			peso = prompt("Ingrese un peso mayor a cero kilos: ","0");
 			peso = parseInt(peso);
 		}
-
-		contador++;
 
 		if (contador == 1)
 		{
@@ -35,9 +34,10 @@ function Mostrar()
 			{
 				menosPesado = peso;
 			}
-		}
+		}//if (contador == 1)
 	}//while (contador < 10)
 
 	document.write("El contenedor mas pesado pesa " + masPesado + " kg.");
 	document.write("<br>" + "El contenedor menos pesado pesa " + menosPesado + " kg.");
-}
+
+}//function Mostrar()

@@ -1,5 +1,4 @@
 function Mostrar()
-
 {
 	var mes;
 	
@@ -25,6 +24,6 @@ function Mostrar()
 		case "diciembre" :
 			alert("Se vienen las fiestas");
 			break;
+			
 	}//switch (mes)
-
-}
+}//function Mostrar()

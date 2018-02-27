@@ -1,7 +1,5 @@
 function Mostrar()
-
 {
-	
 	var precioUno;
 	var precioDos;
 	var precioTres;

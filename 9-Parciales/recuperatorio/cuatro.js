@@ -1,5 +1,4 @@
 function Mostrar()
-
 {
 	var numeroUno;
 	var numeroDos;

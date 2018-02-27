@@ -1,6 +1,4 @@
-
 function Mostrar()
-
 {
 	var base;
 	var resultado;
@@ -10,7 +8,4 @@ function Mostrar()
 	resultado = base * base;
 
 	alert("La superficie del cuadrado es: " + resultado);
-
-
-
 }
