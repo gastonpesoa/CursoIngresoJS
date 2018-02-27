@@ -21,13 +21,13 @@ function ComenzarIngreso ()
  	var nacionalidad;
 
  	//ingreso la edad
- 	edad = prompt("Ingrse la edad, entre 18 y 90 años: ","0");
+ 	edad = prompt("Ingrse la edad: ","Entre 18 y 90 años");
  	edad = parseInt(edad);
 
  	//valido la edad
  	while (edad < 18 || edad > 90 || isNaN(edad))
  	{	
- 		edad = prompt("Vuelva a ingresar la edad, entre 18 y 90 años: ","0");
+ 		edad = prompt("Vuelva a ingresar la edad: ","Entre 18 y 90 años");
  		edad = parseInt(edad);
  	}
 
@@ -52,24 +52,24 @@ function ComenzarIngreso ()
  	}
 
  	//ingreso el sueldo bruto
- 	sueldoBruto = prompt("Ingrse el sueldo bruto, mayor a $8000: ","0");
+ 	sueldoBruto = prompt("Ingrse el sueldo bruto: ","Mayor a $8000");
  	sueldoBruto = parseInt(sueldoBruto);
 
  	//valido el sueldo bruto
  	while (sueldoBruto < 8000 || isNaN(sueldoBruto))
  	{	
- 		sueldoBruto = prompt("Vuelva a ingresar el sueldo bruto, mayor a $8000: ","0");
+ 		sueldoBruto = prompt("Vuelva a ingresar el sueldo bruto: ","Mayor a $8000");
  		sueldoBruto = parseInt(sueldoBruto);
  	}
 
  	//ingreso numero de legajo
- 	legajo = prompt("Ingrese el numero de legajo, 4 cifras sin ceros a la izquierda: ","0000");
+ 	legajo = prompt("Ingrese el numero de legajo: ","4 cifras sin ceros a la izquierda");
  	legajo = parseInt(legajo);
 
  	//valido legajo
  	while (legajo < 1000 || legajo > 9999 || isNaN(legajo)) 
  	{
- 		legajo = prompt("Vuelva a ingresar el numero de legajo, 4 cifras sin ceros a la izquierda: ","0000");
+ 		legajo = prompt("Vuelva a ingresar el numero de legajo: ","4 cifras sin ceros a la izquierda");
  		legajo = parseInt(legajo);
  	}
 
@@ -79,7 +79,7 @@ function ComenzarIngreso ()
  	//valido nacionalidad
  	while (nacionalidad != "A" && nacionalidad != "E" && nacionalidad != "N" || !isNaN(nacionalidad))
  	{
- 		nacionalidad = prompt("Ingrese la nacionalidad: ","'A' para argentinos, 'E' para extranjeros, 'N' para nacionalizados");
+ 		nacionalidad = prompt("Vuelva a ingresar la nacionalidad: ","'A' para argentinos, 'E' para extranjeros, 'N' para nacionalizados");
  	}
 
  	//asigno estado civil al numero ingresado
@@ -99,6 +99,7 @@ function ComenzarIngreso ()
  			break;
  	}//switch (estadoCivil) 
 
+ 	//muestro resultados
  	document.getElementById('Edad').value = edad;
  	document.getElementById('Sexo').value = sexo;
  	document.getElementById('EstadoCivil').value = estadoCivil;
