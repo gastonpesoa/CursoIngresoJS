@@ -68,5 +68,5 @@ function Mostrar()
 	//c) la cantidad de varones que su nota sea mayor o igual a 6.
 	alert("La cantidad de varones con nota mayor o igual a 6 es: " + contadorVaronesNotaMayor);
 
-}
+} 
 

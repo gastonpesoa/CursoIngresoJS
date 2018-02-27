@@ -14,7 +14,7 @@ function Mostrar()
 
 		contador++;
 
-		while (importe <= 0)
+		while (importe <= 0 || isNaN(importe))
 		{
 			importe = prompt("Ingrese un importe mayor a cero: ","0");
 			importe = parseInt(importe);
@@ -40,5 +40,5 @@ function Mostrar()
 
 	document.write("El importe mayor fue: " + mayorImporte);
 	document.write("<br>" + "El importe menor fue: " + menorImporte);
-}
+} 
 

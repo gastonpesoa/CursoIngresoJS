@@ -30,5 +30,5 @@ function Mostrar()
 	   }
 	}//if(numeroUno == numeroDos)
 	
-}//function Mostrar()
+}//function Mostrar() 
 

@@ -11,19 +11,10 @@ function Mostrar()
 		case "febrero" :
 			alert("Veranito!!!!");
 			break;
-		case "marzo" :
-		case "abril" :
-		case "mayo" :
-		case "junio" :
-		case "julio" :
-		case "agosto" :
-		case "septiembre" :
-		case "octubre" :
-		case "noviembre" :
-		case "diciembre" :
+		default :
 			alert("extraño enero y febrero!!!");
 			break;
 			
 	}//switch (mes)
-}//function Mostrar()
+}//function Mostrar() 
 

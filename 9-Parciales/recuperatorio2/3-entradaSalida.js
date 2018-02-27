@@ -16,5 +16,5 @@ function Mostrar()
 	resultado = 6 * perimetro;
 	
 	alert("Se necesitan " + resultado + " metros de alambre");
-}
+} 
 

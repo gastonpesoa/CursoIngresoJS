@@ -30,7 +30,7 @@ function Mostrar()
 		suma = suma + numero;
 
 		//cantidad de numeros pares
-		if (numero % 2 == 0) 
+		if (numero % 2 == 0 && numero != 0) 
 		{
 			cantidadPares++;
 		}
@@ -71,6 +71,5 @@ function Mostrar()
 	document.write("<br>" + "El numero maximo es: " + numeroMaximo);
 	document.write("<br>" + "El numero minimo es: " + numeroMinimo);
 
-	
 }
 

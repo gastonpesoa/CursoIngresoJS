@@ -10,5 +10,5 @@ function Mostrar()
 	document.getElementById('importe').value = importeFinal;
 	
 	//alert("Funciona 2-EntradaSalida");
-}
+} 
 

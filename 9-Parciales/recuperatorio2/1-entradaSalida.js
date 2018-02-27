@@ -9,5 +9,5 @@ function Mostrar()
 	resultado = 3 * base;
 
 	alert("El perimetro del triangulo equilatero es: " + resultado);
-}
+} 
 
