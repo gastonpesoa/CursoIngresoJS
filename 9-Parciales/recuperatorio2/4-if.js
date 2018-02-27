@@ -1,11 +1,6 @@
 ﻿//Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
-
-
 function Mostrar()
-
 {
-	
-
 	var numeroUno;
 	var numeroDos;
 	var resultado;
@@ -19,19 +14,21 @@ function Mostrar()
 	if(numeroUno == numeroDos)
 	{
 	   resultado = numeroUno * numeroDos;
+	   document.write("Se multiplicaron los numeros y el resultado es: " + resultado);
 	}
 	else
 	{
 	   if(numeroUno > numeroDos)
 	   {
-		resultado = numeroUno - numeroDos;   	
+		resultado = numeroUno - numeroDos;  
+		document.write("Se restaron los numeros y el resultado es: " + resultado); 	
  	   }
 	   else
 	   {
-		resultado = numeroUno + numeroDos;   
+		resultado = numeroUno + numeroDos; 
+		document.write("Se sumaron los numeros y el resultado es: " + resultado);  
 	   }
-	}
-
-	document.write(resultado);
-}
+	}//if(numeroUno == numeroDos)
+	
+}//function Mostrar()
 

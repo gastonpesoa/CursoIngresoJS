@@ -1,11 +1,6 @@
 ﻿//Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
-
-
 function Mostrar()
-
 {
-	
-
 	var ancho;
 	var largo;
 	var perimetro;
@@ -21,7 +16,5 @@ function Mostrar()
 	resultado = 6 * perimetro;
 	
 	alert("Se necesitan " + resultado + " metros de alambre");
-	
-
 }
 
