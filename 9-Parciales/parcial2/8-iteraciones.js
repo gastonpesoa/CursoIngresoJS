@@ -69,25 +69,28 @@ function Mostrar()
 			temperatura = parseInt(temperatura);
 		}
 
-		//cantidad de temperaturas pares
+		//cantidad de temperaturas pares e impares
 		if (temperatura % 2 == 0 && temperatura != 0) 
 		{
 			cantidadTemperaturasPares++;
 		}
-
-		//cantidad de temperaturas impares
-		if (temperatura % 2 != 0 && temperatura != 0) 
+		else
 		{
-			cantidadTemperaturasImpares++;
+			if (temperatura != 0) 
+			{
+				cantidadTemperaturasImpares++;
+			}
 		}
 
-		//animal mas pesado y menos pesado
+		//animal mas pesado, menos pesado y temperatura maxima y minima
 		if (contador == 1) 
 		{
 			masPesado = peso;
 			nombreMasPesado = nombre;
 			menosPesado = peso;
 			nombreMenosPesado = nombre;
+			temperaturaMaxima = temperatura;
+			temperaturaMinima = temperatura;
 		}
 		else
 		{
@@ -103,6 +106,15 @@ function Mostrar()
 			}
 		}//if (contador == 1) 
 
+		if (temperatura > temperaturaMaxima) 
+		{
+			temperaturaMaxima = temperatura;
+		}
+		if (temperatura < temperaturaMinima) 
+		{
+			temperaturaMinima = temperatura;
+		}
+
 		//cantidad de temperaturas menor a cero
 		if (temperatura < 0) 
 		{
@@ -112,25 +124,7 @@ function Mostrar()
 		//suma de pesos
 		suma = suma + peso;
 
-		//temperatura maxima y minima
-		if (contador == 1) 
-		{
-			temperaturaMaxima = temperatura;
-			temperaturaMinima = temperatura;
-		}
-		else 
-		{
-			if (temperatura > temperaturaMaxima) 
-			{
-				temperaturaMaxima = temperatura
-			}
-			if (temperatura < temperaturaMinima) 
-			{
-				temperaturaMinima = temperatura;
-			}
-		}//if (contador == 1) 
-
-		respuesta = prompt("¿Desea continuar?","Enter para si/'no' para parar");
+		respuesta = prompt("¿Desea continuar?","'Enter' para seguir/'no' para parar");
 	}
 
 	//promedio
